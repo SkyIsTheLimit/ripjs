@@ -1,0 +1,22 @@
+{
+  "name": "ripjs",
+  "version": "0.0.0",
+  "description": "REST In Peace. Helps you in creating REST Services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkyIsTheLimit/ripjs.git"
+  },
+  "keywords": [
+    "REST"
+  ],
+  "author": "Sandeep Prasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkyIsTheLimit/ripjs/issues"
+  },
+  "homepage": "https://github.com/SkyIsTheLimit/ripjs"
+}
