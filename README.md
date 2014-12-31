@@ -1,4 +1,4 @@
-REST In Peace
-=============
+REST In Peace Website
+=====================
 
-Helps you in creating REST Services.
+This is the REST In Peace Node Module's Website. [WiP]

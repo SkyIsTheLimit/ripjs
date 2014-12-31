@@ -1,0 +1,26 @@
+{
+  "name": "REST In Peace",
+  "version": "0.0.0",
+  "homepage": "http://ripjs.org",
+  "authors": [
+    "Sandeep Prasad <sandeep3180@gmail.com>"
+  ],
+  "description": "This is the website for REST In Peace",
+  "main": "index.html",
+  "keywords": [
+    "REST",
+    "RIP"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "*"
+  }
+}
