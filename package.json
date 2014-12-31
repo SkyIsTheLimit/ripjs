@@ -1,8 +1,11 @@
 {
   "name": "ripjs",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "description": "REST In Peace. Helps you in creating REST Services.",
   "main": "index.js",
+  "bin": {
+    "rip": "lib/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +21,16 @@
   "bugs": {
     "url": "https://github.com/SkyIsTheLimit/ripjs/issues"
   },
-  "homepage": "https://github.com/SkyIsTheLimit/ripjs"
+  "homepage": "https://github.com/SkyIsTheLimit/ripjs",
+  "dependencies": {
+    "underscore": "*",
+    "express": "*",
+    "cookie-parser": "*",
+    "body-parser": "*",
+    "cookie-session": "*",
+    "sequelize": "*",
+    "pg": "*",
+    "colors": "*",
+    "pluralize": "*"
+  }
 }
