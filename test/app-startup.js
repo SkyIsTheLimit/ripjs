@@ -22,13 +22,13 @@ describe(Configuration.title('Application Startup'), function() {
 
         it('Should have an empty list of models', function() {
             // Check if we have an empty list of models for the application.
-            expect(application.models).to.not.be.undefined;
+            expect(application.models).not.to.equal(undefined);
             expect(application.models).to.be.empty;
         });
 
         it('Should have an empty list of endpoints', function() {
             // Check if we have an empty list of endpoints too.
-            expect(application.endpoints).to.not.be.undefined;
+            expect(application.endpoints).not.to.equal(undefined);
             expect(application.endpoints).to.be.empty;
         });
     });

@@ -22,7 +22,7 @@ describe(Configuration.title('Application Configuration'), function() {
 
     describe('As a user, I shall be able to provide the application name in the configuration of the RIP application.', function() {
         it('Should allow to specify application name in the configuration', function() {
-            expect(application.name).to.not.be.undefined;
+            expect(application.name).not.to.equal(undefined);
             expect(application.name).to.equal(configuration.name);
         });
     });
@@ -32,9 +32,8 @@ describe(Configuration.title('Application Configuration'), function() {
         beforeEach(Fixtures.runApplication());
 
         it('Should allow to specify a list of models in the configuration', function() {
-            expect(application.models).to.not.be.undefined;
+            expect(application.models).not.to.equal(undefined);
             expect(application.models.length).to.equal(configuration.models.length);
-            expect(application.models).to.equal(configuration.models);
         });
     });
 });
