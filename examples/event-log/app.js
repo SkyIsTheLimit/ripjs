@@ -1,6 +1,6 @@
 // Load the RIP Engine.
 var RIP = require('../../lib/rip');
-var logger = require('../../lib/logger');
+var logger = RIP.Logger;
 var Q = require('q');
 
 // Load the app configuration.
