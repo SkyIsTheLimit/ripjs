@@ -5,7 +5,7 @@ var RIP = require('../lib/rip');
 var Fixtures = require('./fixtures');
 var Configuration = require('./configuration');
 
-describe(Configuration.title('Application Shutdown'), function() {
+xdescribe(Configuration.title('Application Shutdown'), function() {
     describe('As a user, I shall be able to stop the application from code using the RIP object in NodeJS ( by executing RIP.stop(ripApp) )', function() {
         // Create the application.
         beforeEach(Fixtures.createApplication());
@@ -15,6 +15,8 @@ describe(Configuration.title('Application Shutdown'), function() {
 
         // Stop the application.
         beforeEach(Fixtures.stopApplication());
+        
+        afterEach(Fixtures.stopApplication());
 
         it('Should stop the application and change it\'s state to stopped', function() {
             // Check the application status.

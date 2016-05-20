@@ -5,16 +5,18 @@ var RIP = require('../lib/rip');
 var Fixtures = require('./fixtures');
 var Configuration = require('./configuration');
 
-describe(Configuration.title('Application Startup'), function() {
-    // Create the application.
-    beforeEach(Fixtures.createApplication());
-
+xdescribe(Configuration.title('Application Startup'), function() {
     describe('As a user, I shall be able to run the application from code using the RIP object in NodeJS ( by executing RIP.run(ripApp) )', function() {
+        // Create the application.
+        beforeEach(Fixtures.createApplication());
+        
         // Run the application.
         beforeEach(function() {
             return RIP.run(application);
         });
-
+        
+        afterEach(Fixtures.stopApplication());
+        
         it('Should start the application and change it\'s state to started', function() {
             // Check the application status.
             expect(application.status).to.equal("started");
