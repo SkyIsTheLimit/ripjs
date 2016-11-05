@@ -23,14 +23,5 @@
   },
   "homepage": "https://github.com/SkyIsTheLimit/ripjs",
   "dependencies": {
-    "underscore": "*",
-    "express": "*",
-    "cookie-parser": "*",
-    "body-parser": "*",
-    "cookie-session": "*",
-    "sequelize": "*",
-    "pg": "*",
-    "colors": "*",
-    "pluralize": "*"
   }
 }
